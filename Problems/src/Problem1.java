@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+
+
+public class Problem1 {
+	public static void main(String[] args) {
+		ArrayList<Integer> threes = new ArrayList<Integer>();
+		ArrayList<Integer> fives = new ArrayList<Integer>();
+		long sum = 0;
+		
+		for(int t = 1; t < 1000; t++) {
+			int temp = 3 * t;
+			if(temp < 1000) {
+				threes.add(temp);
+				sum+=temp;
+			}
+		}
+			
+		for(int f = 1; f < 1000; f++) {
+			int femp = 5 * f;
+			if(femp < 1000) {
+				fives.add(femp);
+				sum+=femp;
+			}	
+		}
+		
+		//System.out.println(threes);
+		//System.out.println(fives);
+		System.out.println(sum);
+	}
+}
